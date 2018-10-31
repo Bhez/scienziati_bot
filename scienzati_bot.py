@@ -113,6 +113,7 @@ class constResources:
 # -1 - User just created - needs to insert bio
 # 0 - User created
 # 15 - Banned
+### Aggioramento/ impostaizone bio
 
 
 class UserStatus: #Enum emulator
@@ -310,7 +311,7 @@ def start_user_registration(message):
 
 
 
-### Aggioramento/ impostaizone bio
+### Aggiornamento/ impostazione bio
 @bot.message_handler(commands=['bio'])
 def setBio(message):
 	if not message.from_user.is_bot and message.text != "" :
